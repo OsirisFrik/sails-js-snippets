@@ -1,65 +1,26 @@
-# sails-js-snippets README
+# SailsJS Snippets README
+Visual Studio Code [SailsJS](https://sailsjs.com) sinppets collection.
 
-This is the README for your extension "sails-js-snippets". After writing up a brief description, we recommend including the following sections.
+<div align="center">
 
-## Features
+![VSCode](https://img.shields.io/badge/VS_code-sippets-blue.svg?longCache=true&style=for-the-badge&logo=visual-studio-code)
+![PoweByCommunity](https://img.shields.io/badge/power_by-community-green.svg?longCache=true&style=for-the-badge)
+</div>
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Use
 
-For example if there is an image subfolder under your extension project workspace:
+|Prefix   |Code                       |Description              |
+|---      |---                        |---                      |
+|sdebug   |`sails.log.debug($1)$2`    |Sails log debug level    |
+|sinfo    |`sails.log.info($1)$2`     |Sails log info level     |
+|serror   |`sails.log.error($1)$2`    |Sails log error level    |
+|shelper  |`sails.helpers.$1`         |Sails helpers            |
+|sconfig  |`sails.config.$1`          |Sails config             |
+|sconst   |`sails.config.constants.$1`|Sails config constants   |
 
-\!\[feature X\]\(images/feature-x.png\)
+## Contributions
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Fork
+2. Update `snippets.json` following the standard
+3. Make PullRequest
+4. Be happy and go for a beer or coffe :)

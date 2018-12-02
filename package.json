@@ -1,0 +1,28 @@
+{
+    "name": "sails-js-snippets",
+    "displayName": "Sails.js Snippets",
+    "description": "Sails.js Snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "author": {
+        "name": "OsirisFrik",
+        "email": "osiris@frikdev.com",
+        "url": "https://github.com/OsirisFrik"
+    },
+    "repository": {
+        "url": "https://github.com/OsirisFrik/sails-js-snippets"
+    }
+}

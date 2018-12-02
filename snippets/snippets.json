@@ -1,0 +1,32 @@
+{
+  "debug": {
+    "prefix": "sdebug",
+    "body": "sails.log.debug($1)$2",
+    "description": "Sails log debug level"
+  },
+  "info": {
+    "prefix": "sinfo",
+    "body": "sails.log.info($1)$2",
+    "description": "Sails log info level"
+  },
+  "error": {
+    "prefix": "serror",
+    "body": "sails.log.error($1)$2",
+    "description": "Sails log error level"
+  },
+  "helper": {
+    "prefix": "shelper",
+    "body": "sails.helpers.$1",
+    "description": "Sails helper"
+  },
+  "config": {
+    "prefix": "sconfig",
+    "body": "sails.config.$1",
+    "description": "Sails config"
+  },
+  "constants": {
+    "prefix": "sconst",
+    "body": "sails.config.constants.$1",
+    "description": "Sails config constants"
+  }
+}

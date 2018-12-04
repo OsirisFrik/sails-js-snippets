@@ -1,32 +1,113 @@
 {
   "debug": {
-    "prefix": "sdebug",
+    "prefix": ["sdebug"],
     "body": "sails.log.debug($1)$2",
     "description": "Sails log debug level"
   },
   "info": {
-    "prefix": "sinfo",
+    "prefix": ["sinfo"],
     "body": "sails.log.info($1)$2",
     "description": "Sails log info level"
   },
   "error": {
-    "prefix": "serror",
+    "prefix": ["serror"],
     "body": "sails.log.error($1)$2",
     "description": "Sails log error level"
   },
   "helper": {
-    "prefix": "shelper",
+    "prefix": ["shelper"],
     "body": "sails.helpers.$1",
     "description": "Sails helper"
   },
   "config": {
-    "prefix": "sconfig",
+    "prefix": ["sconfig"],
     "body": "sails.config.$1",
     "description": "Sails config"
   },
   "constants": {
-    "prefix": "sconst",
+    "prefix": ["sconst"],
     "body": "sails.config.constants.$1",
     "description": "Sails config constants"
+  },
+  "request": {
+    "description": "Request"
+  },
+  "req.body": {
+    "prefix": ["rbody"],
+    "body": "req.body",
+    "description": "An object containing text parameters from the parsed request body, defaulting to {}."
+  },
+  "req.query": {
+    "prefix": ["rquery"],
+    "body": "req.query",
+    "description": "A dictionary containing the parsed query-string, defaulting to {}."
+  },
+  "req.params": {
+    "prefix": ["rparams"],
+    "body": "req.params",
+    "description": "An object containing parameter values parsed from the URL path."
+  },
+  "req.method": {
+    "prefix": ["rmethod"],
+    "body": "req.method",
+    "description": "The request method (aka \"verb\".)"
+  },
+  "req.headers": {
+    "prefix": ["rheaders"],
+    "body": "req.headers",
+    "description": "An object containing pre-defined/custom header given in the current request."
+  },
+  "req.path": {
+    "prefix": ["rpath"],
+    "body": "req.path",
+    "description": "The URL pathname from the request URL string of the current request (req)"
+  },
+  "response": {
+    "description": "Response"
+  },
+  "res.attachment": {
+    "prefix": ["rattachment"],
+    "body": "res.attachment($1)$2",
+    "description": "This method should be called prior to streaming down the bytes of your file."
+  },
+  "res.badRequest": {
+    "prefix": ["rbadRequest"],
+    "body": "res.badRequest($1)$2",
+    "description": "This method is used to send a 400 (\"Bad Request\") response back down to the client indicating that the request is invalid. This usually means it contained invalid parameters or headers, or tried to do something impossible based on your app logic."
+  },
+  "res.clearCookie": {
+    "prefix": ["rclearCookie"],
+    "body": "res.clearCookie($1)$2",
+    "description": "Clears cookie (name) in the response."
+  },
+  "res.cookie": {
+    "prefix": ["rcookie"],
+    "body": "res.cookie($1)$2",
+    "description": "Sets a cookie with name (name) and value (value) to be sent along with the response."
+  },
+  "res.forbidden": {
+    "prefix": ["rforbidden", "r403"],
+    "body": "res.forbidden()",
+    "description": "This method is used to send a 403 (\"Forbidden\") response back down to the client indicating that the request is not allowed. This usually means the user-agent tried to do something it was not allowed to do, like change the password of another user."
+  },
+  "res.json": {
+    "prefix": ["rjson"],
+    "body": "res.json($1)",
+    "description": "Sends a JSON response composed of a stringified version of the specified data."
+  },
+  "res.notFound": {
+    "prefix": ["rnotFound", "r404"],
+    "body": "res.notFound($1)$2",
+    "description": "This method is used to send a 404 (\"Not Found\") response using either res.json() or res.view()."
+  },
+  "res.send": {
+    "prefix": ["rsend"],
+    "body": "res.send($1)$2",
+    "description": "Send a string response in a format other than JSON (XML, CSV, plain text, etc.)"
+  },
+  "res.serverError": {
+    "prefix": ["rserverError", "rerror", "r500"],
+    "body": "res.serverError($1)$2",
+    "description": "This method is used to send a 500 (\"Server Error\") response back down to the client indicating that some kind of server error occurred (i.e. the error is not the requesting user agent's fault)."
   }
 }

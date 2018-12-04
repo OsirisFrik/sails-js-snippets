@@ -4,6 +4,7 @@
     "description": "Sails.js Snippets",
     "version": "1.0.0",
     "icon": "images/icon.png",
+    "publisher": "OsirisFrik",
     "galleryBanner": {
         "color": "#C80000",
         "theme": "dark"

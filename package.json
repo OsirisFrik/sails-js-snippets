@@ -2,7 +2,7 @@
     "name": "sails-js-snippets",
     "displayName": "Sails.js Snippets",
     "description": "Sails.js Snippets",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#C80000",

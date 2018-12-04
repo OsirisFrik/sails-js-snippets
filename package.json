@@ -2,7 +2,7 @@
     "name": "sails-js-snippets",
     "displayName": "Sails.js Snippets",
     "description": "Sails.js Snippets",
-    "version": "2.0.0",
+    "version": "0.0.1",
     "icon": "images/icon.png",
     "publisher": "OsirisFrik",
     "galleryBanner": {
@@ -30,10 +30,5 @@
     },
     "repository": {
         "url": "https://github.com/OsirisFrik/sails-js-snippets"
-    },
-    "badges": [
-        "https://img.shields.io/badge/VS_code-sippets-blue.svg?longCache=true&style=for-the-badge&logo=visual-studio-code",
-        "https://img.shields.io/badge/power_by-community-green.svg?longCache=true&style=for-the-badge",
-        "https://img.shields.io/badge/framework-SailsJs-blue.svg?longCache=true&style=for-the-badge"
-    ]
+    }
 }

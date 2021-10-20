@@ -1,4 +1,5 @@
 # SailsJS Snippets
+
 Visual Studio Code [SailsJS](https://sailsjs.com) sinppets collection.
 
 <div align="center">
@@ -33,6 +34,8 @@ Visual Studio Code [SailsJS](https://sailsjs.com) sinppets collection.
 |rnotFound`*` |`res.notFound($1)$2`       |
 |rsend        |`res.send($1)$2`           |
 |rerror`*`    |`res.serverError($1)$2`    |
+|helper`*`    |helper template            |
+|hinput`*`    |helper input obj template  |
 
 `* More prefix options`
 

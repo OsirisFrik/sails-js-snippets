@@ -1,32 +1,32 @@
 {
   "debug": {
     "prefix": ["sdebug"],
-    "body": "sails.log.debug($1)$2",
+    "body": "sails.log.debug($0)",
     "description": "Sails log debug level"
   },
   "info": {
     "prefix": ["sinfo"],
-    "body": "sails.log.info($1)$2",
+    "body": "sails.log.info($0)",
     "description": "Sails log info level"
   },
   "error": {
     "prefix": ["serror"],
-    "body": "sails.log.error($1)$2",
+    "body": "sails.log.error($0)",
     "description": "Sails log error level"
   },
-  "helper": {
-    "prefix": ["shelper"],
-    "body": "sails.helpers.$1",
+  "sails.helpers": {
+    "prefix": ["shelper", "sh"],
+    "body": "sails.helpers.$0",
     "description": "Sails helper"
   },
   "config": {
     "prefix": ["sconfig"],
-    "body": "sails.config.$1",
+    "body": "sails.config.$0",
     "description": "Sails config"
   },
   "constants": {
     "prefix": ["sconst"],
-    "body": "sails.config.constants.$1",
+    "body": "sails.config.constants.$0",
     "description": "Sails config constants"
   },
   "request": {
@@ -67,22 +67,22 @@
   },
   "res.attachment": {
     "prefix": ["rattachment"],
-    "body": "res.attachment($1)$2",
+    "body": "res.attachment($0)",
     "description": "This method should be called prior to streaming down the bytes of your file."
   },
   "res.badRequest": {
     "prefix": ["rbadRequest"],
-    "body": "res.badRequest($1)$2",
+    "body": "res.badRequest($0)",
     "description": "This method is used to send a 400 (\"Bad Request\") response back down to the client indicating that the request is invalid. This usually means it contained invalid parameters or headers, or tried to do something impossible based on your app logic."
   },
   "res.clearCookie": {
     "prefix": ["rclearCookie"],
-    "body": "res.clearCookie($1)$2",
+    "body": "res.clearCookie($0)",
     "description": "Clears cookie (name) in the response."
   },
   "res.cookie": {
     "prefix": ["rcookie"],
-    "body": "res.cookie($1)$2",
+    "body": "res.cookie($0)",
     "description": "Sets a cookie with name (name) and value (value) to be sent along with the response."
   },
   "res.forbidden": {
@@ -97,17 +97,46 @@
   },
   "res.notFound": {
     "prefix": ["rnotFound", "r404"],
-    "body": "res.notFound($1)$2",
+    "body": "res.notFound($0)",
     "description": "This method is used to send a 404 (\"Not Found\") response using either res.json() or res.view()."
   },
   "res.send": {
     "prefix": ["rsend"],
-    "body": "res.send($1)$2",
+    "body": "res.send($0)",
     "description": "Send a string response in a format other than JSON (XML, CSV, plain text, etc.)"
   },
   "res.serverError": {
     "prefix": ["rserverError", "rerror", "r500"],
-    "body": "res.serverError($1)$2",
+    "body": "res.serverError($0)",
     "description": "This method is used to send a 500 (\"Server Error\") response back down to the client indicating that some kind of server error occurred (i.e. the error is not the requesting user agent's fault)."
+  },
+  "helper": {
+    "prefix": [
+      "helper",
+      "chelper"
+    ],
+    "description": "Helper template",
+    "body": [
+      "module.exports = {",
+      "\tfriendlyName: '$1',",
+      "\tdescription: '$2',",
+      "\tinputs: {\n\t\t$3\n\t},",
+      "\tfn: async function (inputs, exits) {\n\t\t\n\t}",
+      "}"
+    ]
+  },
+  "helper input": {
+    "prefix": [
+      "sinput",
+      "hinput"
+    ],
+    "description": "Helper input template",
+    "body": [
+      "$1: {",
+      "\ttype: '$2',",
+      "\trequired: ${3:true},",
+      "\tdefault: ${4:null}",
+      "}"
+    ]
   }
 }

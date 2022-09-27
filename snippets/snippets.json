@@ -9,6 +9,11 @@
     "body": "sails.log.info($0)",
     "description": "Sails log info level"
   },
+  "warn": {
+    "prefix": ["swarn"],
+    "body": "sails.log.warn($0)",
+    "description": "Sails log warning level"
+  },
   "error": {
     "prefix": ["serror"],
     "body": "sails.log.error($0)",
